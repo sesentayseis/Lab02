@@ -1,0 +1,20 @@
+<h2>{{ saludo }}</h2>
+<p>elija una solo opción para resolver</p>
+<form action="respuesta_suma" method="post">
+    {%csrf_token%}
+    <input type="text" name="n1">+
+    <input type="text" name="n2">
+    <input type="submit" name="sumar" value="Sumar">
+</form>
+<form action="respuesta_resta" method="post">
+    {%csrf_token%}
+    <input type="text" name="n1">-
+    <input type="text" name="n2">
+    <input type="submit" name="restar" value="Restar">
+</form>
+<form action="respuesta_multiplicacion" method="post">
+    {%csrf_token%}
+    <input type="text" name="n1">X
+    <input type="text" name="n2">
+    <input type="submit" name="multiplicar" value="Multiplicar">
+</form>
